@@ -1,11 +1,11 @@
-var express = require("express");
+const express = require("express");
 
 
 // Tells node that we are creating an "express" server
-var app = express();
+const app = express();
 
 // Sets an initial port.
-var PORT = 
+const PORT = 3000
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));

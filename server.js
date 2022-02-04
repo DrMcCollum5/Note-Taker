@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { clog } = require("./middleware/clog");
+// const { clog } = require("./middleware/clog");
 const apiroutes = require("./routes/apiroutes");
 const htmlroutes = require("./routes/htmlroutes");
 const app = express();
@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 // app.use() is middleware funciton
-app.use(clog);
+// app.use(clog);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

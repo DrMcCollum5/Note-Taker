@@ -9,7 +9,7 @@ const {
 
 
 router.get("/", (req, res) => {
-  readFromFile("./db/db.json").then((notes) => res.json(JSON.parse(notes)));
+  readFromFile("./db/db.json").then((notes) => {return res.json(notes)});
 });
 
 router.get('/:id', (req, res) => {
